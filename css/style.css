@@ -1,0 +1,656 @@
+. {
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    padding: 0 15px;
+} /*push div to left & right so horizontal scroll not appear on browser */
+/* Embedding fonts */
+/*Asap*/
+@font-face {
+    font-family: "Asap";
+    src: url(/fonts/asap/Asap-Regular.ttf);
+}
+@font-face {
+    font-family: "Asap-bold";
+    src: url(/fonts/asap/Asap-Bold.ttf);
+}
+@font-face {
+    font-family: "Asap-italic";
+    src: url(/fonts/asap/Asap-Italic.ttf);
+}
+@font-face {
+    font-family: "Asap-BoldItalic";
+    src: url(/fonts/asap/Asap-BoldItalic.ttf);
+}
+
+/*Abhayalibre*/
+@font-face {
+    font-family: "AbhayaLibre";
+    src: url(/fonts/abhayaLibre/AbhayaLibre-Regular.ttf);
+}
+@font-face {
+    font-family: "AbhayaLibre-bold";
+    src: url(/fonts/abhayaLibre/AbhayaLibre-Bold.ttf);
+}
+@font-face {
+    font-family: "AbhayaLibre-medium";
+    src: url(/fonts/abhayaLibre/AbhayaLibre-Medium.ttf);
+}
+@font-face {
+    font-family: "AbhayaLibre-SemiBold";
+    src: url(/fonts/abhayaLibre/AbhayaLibre-SemiBold.ttf);
+}
+@font-face {
+    font-family: "AbhayaLibre-ExtraBold";
+    src: url(/fonts/abhayaLibre/AbhayaLibre-ExtraBold.ttf);
+}
+/*End Embedding fonts */
+
+body {
+    font-family: 'Raleway', 'Helvetica', tahoma;
+}
+/*Paseban head*/
+.paseban-head {
+    background-image:linear-gradient(rgba(135,122,112,.9),rgba(135,122,112,.9)),url(../img/Background-paseban.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/*Custom animation*/
+.banner {
+    /*Add duration animations  */
+    -webkit-animation-duration: 3s !important;
+    -moz-animation-duration: 3s !important;
+    -o-animation-duration: 3s !important;
+    animation-duration: 3s !important;
+}
+
+.h-story {
+    -webkit-animation-duration: 3s !important;
+}
+
+.left-story {
+    -webkit-animation-duration: 2s !important;
+}
+
+.right-story {
+    -webkit-animation-duration: 2s !important;
+}
+
+.pic-thecoffee {
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 1s;
+}
+
+.expl-thecoffee {
+    -webkit-animation-duration: 3s;
+}
+
+.text-cupofcoffee h1 {
+    -webkit-animation-delay: 0.2s;
+}
+
+.text-cupofcoffee h5 {
+    -webkit-animation-delay: 0.5s;
+}
+.text-cupofcoffee p {
+    -webkit-animation-delay: 1s;
+}
+
+.text-buycoffee {
+    -webkit-animation-delay: 0.2s;
+}
+
+.product-coffee img {
+    -webkit-animation-delay: 0.5s;
+}
+
+.product-coffee h4 {
+    -webkit-animation-delay: 0.6s;
+}
+
+.product-coffee h4 {
+    -webkit-animation-delay: 0.7s;
+}
+
+.visit-content i {
+    -webkit-animation-delay: 0.5s;
+}
+
+.visit-content img {
+    -webkit-animation-delay: 0.7s;
+}
+
+
+/*Navbar Setion */
+.navbar-default {
+    min-height: 60px;
+    background-color: transparent;
+    border: 0;
+    opacity: 0.9;
+}
+.navbar-nav {
+    font-family: Asap-Bold;
+    border: 0;
+    font-size: 1em;
+    margin: 12px 0 0;
+    
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: 0;
+}
+.navbar-default .navbar-nav li a {
+    color: #ececec;
+    margin-right: 10px;
+    transition: all .5s;
+}
+.navbar-default .navbar-nav li a:hover {
+    color: #fff;
+}
+
+
+/*Style Icon Bar */
+.navbar-default .navbar-toggle .icon-bar {
+    height: 3px;
+    background-color: #fff;
+}
+
+/*Navbar Animation */
+.navbar-toggle {
+    margin-top: 15px;
+    border: none;
+  background: transparent !important;
+
+  &:hover {
+    background: transparent !important;
+  }
+}
+
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: translate(3px)rotate(45deg);
+  transform-origin: 10% -10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: translate(3px)rotate(-45deg);
+  transform-origin: -5% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+/* Start Banner */
+.banner {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.banner h1 {
+    font-family: Asap-BoldItalic;
+    color: #fff;
+    font-size: 4.5em;
+}
+.banner p {
+    font-family: AbhayaLibre;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 100px;
+}
+}
+/* End Banner */
+/* Section Our Story */
+section {
+    padding: 0;
+}
+.ourstory { 
+    padding-top: 100px;
+    background-color: #231d1f;
+    height: 500px;
+}
+.ourstory h1 {
+    font-family: Asap-bold;
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.text-ourstory p {
+    font-family: AbhayaLibre;
+    font-size: 1.15em;
+    color: #fff;
+}
+.ourstory .text-right {
+    padding: 0;
+} 
+.ourstory .text-right p {
+    
+}
+.ourstory .text-left {
+    padding: 0;
+    margin: auto;
+}
+/*Custom Fancy Button :) */
+.btn {
+    transition: all .5s;
+}
+.btn-readmore {
+    margin-top: 60px;
+}
+.btn-default {
+    background-color: #231d1f;
+    border: 2px solid #734640;
+    color: #916876;
+    font-family: Asap;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+.btn-default i {
+    margin-left: 3px;
+}
+.btn-default:hover {
+    border: 2px solid #a0a0a0;
+    background-color: #231d1f;
+    color: #a0a0a0;
+}
+/*End Section Our Story */
+/*Start Our Coffee Section */
+.thecoffee{
+    background-image: url(../img/Background-ourcoffee.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+.col-thecoffee {
+    margin-top: 50px;
+}
+.pic-thecoffee {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.thecoffee h3{
+    padding-top: 160px;
+    font-family: AbhayaLibre;
+    font-size: 1.5em;
+    word-spacing: 3px;
+    margin: 0;
+}
+.thecoffee h1{
+    margin: 0;
+    font-family: Asap-bold;
+    font-size: 2.5em;
+    color: #734640;
+}
+.thecoffee h2{
+    margin: 30px 0 0 0;
+    font-family: AbhayaLibre-bold;
+    font-size: 1.78em;
+    color: #000;
+}
+.thecoffee h4{
+    margin: 5px 0 20px 0;
+    font-family: Asap;
+    font-size: 1em;
+    color: #000;
+}
+/*End Our Coffe Section */
+/*Start Cup Of Coffee Section */
+.text-cupofcoffee{
+    margin-top: 100px;
+}
+.cupofcoffee img {
+    width: 100%;
+}
+.text-cupofcoffee h1 {
+    margin: 0;
+    font-family: Asap-bold;
+    font-size: 2.5em;
+    color: #734640;
+    margin-bottom: 15px;
+}
+.text-cupofcoffee h5 {
+    font-family: AbhayaLibre;
+    font-size: 1em;
+    color: #916876;   
+}
+.text-cupofcoffee h5:after {
+    display: block;
+    height: 4px;
+    width: 40px;
+    background-color: #85534a;
+    content: "";
+    margin: 0;
+    margin: 20px 0;
+}
+.text-cupofcoffee p,ul {
+    font-family: AbhayaLibre;
+    font-size: 1em;
+    color: #646464;
+    list-style: none;
+    padding-left: 0;
+}
+.text-cupofcoffee h3 {
+    font-family: AbhayaLibre-Bold;
+    font-size: 1.78em;
+    color: #000;
+}
+.coffee-text {
+    padding: 10px 0;
+}
+.btn-success {
+    width: 75px;
+    height: 15px;
+    background-color: transparent;
+    color: #916876;
+    font-family: Asap-Bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: 0;
+    padding: 0;
+    text-align: left;
+}
+.btn-success i {
+    margin-left: 3px;
+}
+.btn-success:hover {
+    background-color: transparent;
+    color: #a0a0a0;
+    border-radius: 0;
+}
+
+
+/*End Ingredients Section */
+/*Start buy coffee section */
+.buycoffee{
+    background-color: #231d1f;
+    height: 700px; 
+}
+.buycoffee h1{
+    font-family: Asap-bold;
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0 0 30px;
+}
+.buycoffee h3{
+    padding-top: 100px;
+    font-family: AbhayaLibre;
+    font-size: 1.5em;
+    color: #92576b;
+    word-spacing: 3px;
+    margin: 0;
+}
+.buycoffee .coffee-vote{
+    margin-top: 20px;
+}
+.buycoffee .coffee-vote i {
+    color: #7d4b6a;
+    font-size: 17px;
+    margin-left: 4px;
+}
+.coffee-caps h4 {
+    font-family: AbhayaLibre-bold;
+    font-size: 1.1em;
+    color: #885953;
+}
+.coffee-caps h5 {
+    font-family: AbhayaLibre;
+    font-size: 1em;
+    color: #6f8f9a;
+}
+.btn-allproducts {
+        margin-top:  25px;
+    }
+/*End buy coffee section */
+/*Start Visit us section */
+.visit-us {
+    background-image:linear-gradient(rgba(35,29,31,.7),rgba(35,29,31,.9)),url(../img/Background-visit.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.visit-content {
+    margin-top: 100px;
+}
+.visit-content h3 {
+    font-family: AbhayaLibre;
+    font-size: 1.1em;
+    color: #afa0a5;
+    word-spacing: 3px;
+    margin: 0;
+}
+.visit-content h1 {
+    font-family: Asap-Bold;
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 30px;
+    line-height: 40x;
+}
+.visit-content p {
+    font-family: AbhayaLibre;
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 25px;
+}
+blockquote {
+    border: none;
+    font-family: "AbhayaLibre",Georgia, "Times New Roman", Times, serif;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote p:before { 
+    content: open-quote;
+    font-family: AbhayaLibre-Bold;
+    font-size:2em;
+    color:#fff;
+} 
+blockquote p:after { 
+    content: close-quote;
+    font-family: AbhayaLibre-Bold;
+    font-size:2em;
+    color:#fff;
+} 
+.contact .contact-item {
+    margin-top: 10px;
+}
+.contact i {
+    width: 35px;
+    height: 35px;
+    background-color: #392d31;
+    text-align: center;
+    float: left;
+    font-size: 1.8em;
+    color: #afa0a5;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.contact {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.visit-content .text-contact  {
+    color: #afa0a5;
+    margin-left: 45px;
+}
+/*End Visit us section */
+/*Start Footer */
+footer {
+    min-height: 80px;
+    background-color: #231e1f;
+}
+footer p {
+    margin-top: 25px;
+    font-family: AbhayaLibre;
+    font-size: 1.1em;
+    color: #afa0a5;
+    background-color: rgba(35,29,31,.9);
+}
+
+/*End Footer */
+
+/*Media Queries*/
+/*col-md responsive */
+@media(max-width:970px) {
+    .contact {
+    left: 67%;
+    top: 40%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+        
+    }
+}
+
+/*col-sm responsive */
+@media(max-width:768px) {
+/*    .navbar-toggle {
+        margin-top: 20px;
+    } */
+     .paseban-head {
+        background-image:linear-gradient(rgba(135,122,112,.3),rgba(135,122,112,.9)),url(../img/Background-paseban.jpg);
+          height: 50vh;
+    }
+    
+    .paseban-head .banner {
+    left: 40%;
+    top: 30%;;
+    position: absolute;
+    }
+    
+    .paseban-head .banner p{
+        display: none;
+    }
+    
+    .paseban-head .banner h1 {
+		font-size:48px;
+	}
+    
+    .ourstory { 
+        padding-top: 20px;
+        background-color: #231d1f;
+        height: 370px;
+    }
+    
+    .cupofcoffee img {
+    margin-top: 80px;
+    width: 50%;
+    }
+    
+    .thecoffee {
+        background-size: contain;
+    }
+    
+    .text-cupofcoffee{
+        margin-top: 50px;
+    }
+    
+    .buycoffee{
+        height: 600px; 
+    }
+    
+     .contact {
+        margin-top: 30px;
+        left: 70%;
+        top: 40%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+    
+    .visit-content img{
+        display: none;
+    }
+    
+    .visit-us {
+        height: 70vh;
+    }
+  
+}
+
+/*responsive col-xs for mobile display */
+@media (max-width : 479px) {
+    .paseban-head {
+        background-image:linear-gradient(rgba(135,122,112,.3),rgba(135,122,112,.9)),url(../img/Background-paseban.jpg);
+          height: 50vh;
+    }
+    
+    .paseban-head .banner {
+        left: 50%;
+        top: 30%;;
+        position: absolute;
+    }
+    
+    .paseban-head .banner p{
+        display: none;
+    }
+    
+    .paseban-head .banner h1 {
+		font-size:38px;
+	}
+    
+    .ourstory { 
+        padding-top: 20px;
+        background-color: #231d1f;
+        height: 450px;
+    }
+    
+    .text-ourstory p {
+        text-align: left;
+        font-size: 1em;
+    }
+    
+    .cupofcoffee img {
+        margin-top: 80px;
+        width: 100%;
+    }
+    
+    .text-cupofcoffee{
+        margin-top: 50px;
+    }
+    
+    .thecoffee{
+        background: transparent;
+    }
+    
+    .thecoffee h3{
+        padding-top: 50px;
+    } 
+    .buycoffee{
+        height: 1400px; 
+    }
+    
+    .visit-content img{
+        display: none;
+    }
+    
+    .contact {
+        margin-top: 200px;
+        left: 30%;
+        top: 40%;
+    }
+    
+    .visit-us {
+        background-image:linear-gradient(rgba(35,29,31,.4),rgba(35,29,31,.9)),url(../img/Background-visit.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 820px;
+    }
+    
+}
