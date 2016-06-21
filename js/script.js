@@ -1,3 +1,17 @@
+// init wow
+new WOW().init();
+
+//jquery smooth scroll
+    $('ul.nav a').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+          scrollTarget: link.hash,
+            speed: 500
+        });
+      });
+    
+// Navbar animation when scrolling
 var a = $(".navbar-default").offset().top;
 $(document).scroll(function(){
     if($(this).scrollTop() > a)
@@ -7,6 +21,8 @@ $(document).scroll(function(){
        $('.navbar-default').css({"background":"transparent"});
     }
 });
+
+// Using wow for animating content 
 $(".banner").addClass('wow animated fadeIn');
 $(".title-story").addClass('wow animated fadeInDown');
 $(".left-story").addClass('wow animated fadeInLeft');
